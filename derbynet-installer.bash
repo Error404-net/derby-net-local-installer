@@ -5,7 +5,7 @@
 # Update all packages
 apt-get update && apt-get -y dist-upgrade && apt-get -y dist-upgrade
 
-apt-get install -y apt-transport-https
+apt-get install -y apt-transport-https git
 
 wget -q -O- https://jeffpiazza.org/derbynet/debian/jeffpiazza_derbynet.gpg | \
 tee /usr/share/keyrings/derbynet-archive-keyring.gpg
@@ -21,6 +21,3 @@ apt-get install -y derbynet-server
 
 # remove apache if installed since derbynet is dependet on nginx
 apt-get remove -y apache2
-
-
-# install and config certbot for ssl cert
