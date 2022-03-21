@@ -14,7 +14,7 @@ ln -s /snap/bin/certbot /usr/bin/certbot
 
 ## request a tls/ssl certifiacte using certbot
 # request a certificate and automatically configure it on nginx
-certbot --nginx
+certbot --nginx -d derbynet.pack1177.tk
 
 # request a certificate without configuring nginx
 # certbot certonly --nginx
